@@ -4,7 +4,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.5px solid  #2d576b;
+    // border-bottom: 0.5px solid  #2d576b;
+    box-shadow: 0 4px 6px rgba(45, 87, 107, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
 
 nav{
@@ -25,7 +33,6 @@ nav{
     h1{
         font-size: 1.5rem;
         font-weight: 600;
-        // color: #21416e;
         background:  linear-gradient(to right, #2d576b, #1b949c);
         background-clip: text;
         color: transparent;
@@ -44,4 +51,27 @@ nav{
     }
 }
 
+}
+
+@media (width >=768px) {
+    header{
+        padding: 0.5rem 2rem;
+    }
+}
+
+@media (width >= 1200px) {
+    header{
+        padding: 0.5rem 6rem;
+
+            nav{
+                #logo{  
+                width: 3rem;
+                aspect-ratio:  1 /1;
+                }
+                h1{
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+    }
 }

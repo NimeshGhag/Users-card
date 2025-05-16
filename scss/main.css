@@ -1,0 +1,173 @@
+main {
+  margin-top: 5rem;
+}
+main #view-1 {
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
+}
+main #view-1 .user {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(45, 87, 107, 0.2);
+  display: grid;
+}
+main #view-1 .user .status {
+  margin: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
+  background: green;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  border-radius: 1rem;
+  color: #fff;
+}
+main #view-1 .user .status h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+main #view-1 .user .info {
+  display: grid;
+  gap: 0.2rem;
+  place-items: center;
+  margin: 0.8rem 1rem 0 1rem;
+}
+main #view-1 .user .info .avatar img {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #view-1 .user .info .name h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: -0.01rem;
+}
+main #view-1 .user .info .role h5 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.5;
+}
+main #view-1 .user .info .skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main #view-1 .user .info .skills .skill {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3rem;
+  text-align: center;
+  border: none;
+  box-shadow: 0 2px 4px rgba(45, 87, 107, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+main #view-1 .user .info .skills .skill:hover {
+  cursor: pointer;
+  background-color: #1b949c;
+  color: #fff;
+}
+main #view-1 .user .info .dec {
+  text-align: center;
+}
+main #view-1 .user .info .dec p {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  letter-spacing: -0.01rem;
+}
+main #view-1 .user .info .line {
+  margin-top: 1rem;
+  place-content: center;
+  width: 25%;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #2d576b;
+}
+main #view-1 .user button {
+  font-size: 1.2rem;
+  letter-spacing: -0.01rem;
+  background-color: #fff;
+  color: #1b949c;
+  border: none;
+  padding: 1rem;
+}
+main #view-1 .user button:hover {
+  background-color: #1b949c;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media (width >= 600px) {
+  #view-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (width >= 768px) {
+  main {
+    margin: 5rem 1rem;
+  }
+}
+@media (width >= 992px) {
+  #view-1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (width >= 1200px) {
+  main {
+    margin: 5rem 5rem;
+  }
+}
+@media (width >= 1405px) {
+  main #view-1 .user .status {
+    margin: 0.8rem 1rem;
+  }
+  main #view-1 .user .status h4 {
+    font-size: 1.2rem;
+  }
+  main #view-1 .user .info {
+    gap: 0.5rem;
+  }
+  main #view-1 .user .info .name h3 {
+    font-size: 2rem;
+  }
+  main #view-1 .user .info .role h5 {
+    font-size: 1rem;
+  }
+  main #view-1 .user .info .dec p {
+    font-size: 0.95rem;
+  }
+}
+@media (width >= 1695px) {
+  main #view-1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  main #view-1 .user .status {
+    margin: 1rem 1.2rem;
+  }
+  main #view-1 .user .status h4 {
+    font-size: 1.3rem;
+  }
+  main #view-1 .user .info {
+    gap: 0.78rem;
+  }
+  main #view-1 .user .info .name h3 {
+    font-size: 2.2rem;
+  }
+  main #view-1 .user .info .role h5 {
+    font-size: 1.2rem;
+  }
+  main #view-1 .user .info .skills .skill {
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    box-shadow: 0 2px 4px rgba(45, 87, 107, 0.1);
+    border-radius: 16px;
+  }
+  main #view-1 .user .info .dec p {
+    font-size: 1.2rem;
+  }
+}
