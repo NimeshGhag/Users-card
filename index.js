@@ -67,7 +67,7 @@ const users = [
     avatar: "https://randomuser.me/api/portraits/men/50.jpg",
     name: "Tom Lee",
     role: "Full Stack Developer",
-    skills: ["React", "Node.js", "GraphQL", "Next.js"],
+    skills: ["HTML", "CSS", "JavaScript","React", "Node.js", "GraphQL", "Next.js"],
     description: "End-to-end web application development with modern technologies.",
     status: "online"
   },
@@ -80,3 +80,67 @@ const users = [
     status: "offline"
   }
 ];
+
+let clutter = '';
+
+users.forEach((elem)=>{
+
+  //skils
+  let skillsHtml = '';
+  //show only first 3 skills
+  const visibalSkill = elem.skills.slice(0,3); 
+  const remainig = elem.skills.length - visibalSkill.length;
+
+  //showing that skills
+  visibalSkill.forEach((skill)=>{
+     skillsHtml += `<div class="skill">${skill}</div>`
+  })
+
+  //checking condition is reaming is grater than 0
+  if(remainig > 0){
+     skillsHtml += `<div class="skill">${'+' + remainig}</div>`
+  }
+ 
+  
+  clutter += ` <div class="user">
+                <div class="status">
+                    <h4>${elem.status}</h>
+                </div>
+                <div class="info">
+                    <div class="avatar">
+                        <img src="${elem.avatar}" alt="">
+                    </div>
+
+                    <div class="name">
+                        <h3>${elem.name}</h3>
+                    </div>
+
+                    <div class="role">
+                        <h5>${elem.role}</h5>
+                    </div>
+
+                    <div class="skills">
+                        ${skillsHtml}
+                    </div>
+
+                    <div class="dec">
+                        <p>${elem.description}</p>
+                    </div>
+                       
+                    <div class="line"></div>
+                </div>
+             
+                <button>
+                    Follow
+                </button>
+           </div>`
+  
+})
+
+
+
+let view = document.querySelector('#view-1')
+view.innerHTML = clutter
+
+
+
