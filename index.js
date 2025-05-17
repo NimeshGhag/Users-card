@@ -93,22 +93,22 @@ const users = [
 
 let view = document.querySelector('#view-1')
 let theme = document.querySelector('header #theme')
-let light =  '<i class="ri-sun-line"></i>'
-let dark =  '<i class="ri-moon-line"></i>'
-theme.addEventListener('click',()=>{
+let lightIcon =  '<i class="ri-sun-line"></i>'
+let darkIcon =  '<i class="ri-moon-line"></i>'
+
+let isDark = false;
+theme.innerHTML = darkIcon; // default to dark mode icon
+
+let darkMode =theme.addEventListener('click', () => {
+  isDark = !isDark; // toggle boolean
+
+  document.body.classList.toggle('dark' , isDark); // apply or remove dark class
   
-  if(theme.innerHTML== light){
-    theme.innerHTML = dark
-  } 
-  else{
-    theme.innerHTML = light
-  }
+ 
+  theme.innerHTML = isDark ? lightIcon : darkIcon; // toggle icon
+
+  theme.style.color = isDark ? '#fff' : '#000';
 })
-
-
-
-
-
 
 
 
@@ -132,10 +132,10 @@ function cardInfo(){
     if(remainig > 0){
       skillsHtml += `<div class="skill">${'+' + remainig}</div>`
     }
-  
+
     
     clutter += ` <div class="user">
-                  <div class="status">
+                  <div class="status" style = 'background-color : ${elem.status === 'online' ? 'green' :'red'}'>
                       <h4>${elem.status}</h>
                   </div>
                   <div class="info">
@@ -185,4 +185,6 @@ view.addEventListener('click', (dets)=>{
     cardInfo(); 
   }
 })
+
+
 

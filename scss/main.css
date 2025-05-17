@@ -10,8 +10,10 @@ main #view-1 {
 main #view-1 .user {
   background-color: transparent;
   border-radius: 0.5rem;
+  border: 1px solid #fff;
   box-shadow: 0 4px 8px rgba(45, 87, 107, 0.2);
   display: grid;
+  overflow: hidden;
 }
 main #view-1 .user .status {
   margin: 0.5rem 1rem;

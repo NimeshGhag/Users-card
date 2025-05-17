@@ -41,10 +41,13 @@ header #theme {
   height: 2rem;
   border-radius: 5rem;
   border: none;
+  text-align: center;
   background-color: transparent;
 }
 header #theme i {
   font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
 }
 
 @media (width >= 768px) {
