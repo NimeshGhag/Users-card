@@ -8,7 +8,7 @@ main #view-1 {
   gap: 2rem;
 }
 main #view-1 .user {
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(45, 87, 107, 0.2);
   display: grid;
@@ -89,7 +89,7 @@ main #view-1 .user .info .line {
 main #view-1 .user button {
   font-size: 1.2rem;
   letter-spacing: -0.01rem;
-  background-color: #fff;
+  background-color: transparent;
   color: #1b949c;
   border: none;
   padding: 1rem;
