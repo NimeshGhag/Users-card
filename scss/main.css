@@ -11,14 +11,15 @@ main #view-1 .user {
   background-color: transparent;
   border-radius: 0.5rem;
   border: 1px solid #fff;
-  box-shadow: 0 4px 8px rgba(45, 87, 107, 0.2);
+  box-shadow: 0 2px 6px rgba(45, 87, 107, 0.15);
   display: grid;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 main #view-1 .user .status {
   margin: 0.5rem 1rem;
-  padding: 0.4rem 0.8rem;
-  background: green;
+  padding: 0.2rem 0.6rem;
+  background: #059669;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
@@ -26,16 +27,17 @@ main #view-1 .user .status {
   color: #fff;
 }
 main #view-1 .user .status h4 {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 550;
 }
 main #view-1 .user .info {
   display: grid;
   gap: 0.2rem;
   place-items: center;
-  margin: 0.8rem 1rem 0 1rem;
+  margin: 0rem 1rem 0 1rem;
 }
 main #view-1 .user .info .avatar img {
+  width: 6rem;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -102,6 +104,9 @@ main #view-1 .user button:hover {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+main #view-1 .user:hover {
+  box-shadow: 0 8px 20px rgba(45, 87, 107, 0.3);
+}
 
 @media (width >= 600px) {
   #view-1 {
@@ -128,19 +133,19 @@ main #view-1 .user button:hover {
     margin: 0.8rem 1rem;
   }
   main #view-1 .user .status h4 {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   main #view-1 .user .info {
     gap: 0.5rem;
   }
   main #view-1 .user .info .name h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   main #view-1 .user .info .role h5 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   main #view-1 .user .info .dec p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 }
 @media (width >= 1695px) {
@@ -151,25 +156,25 @@ main #view-1 .user button:hover {
     margin: 1rem 1.2rem;
   }
   main #view-1 .user .status h4 {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
   main #view-1 .user .info {
     gap: 0.78rem;
   }
   main #view-1 .user .info .name h3 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   main #view-1 .user .info .role h5 {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   main #view-1 .user .info .skills .skill {
-    padding: 0.5rem;
+    padding: 0.3rem;
     text-align: center;
     border: none;
     box-shadow: 0 2px 4px rgba(45, 87, 107, 0.1);
     border-radius: 16px;
   }
   main #view-1 .user .info .dec p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }

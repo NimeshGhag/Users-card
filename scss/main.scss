@@ -11,22 +11,25 @@ main{
             background-color: transparent;
             border-radius: .5rem ;
             border: 1px solid #fff;
-            box-shadow:0 4px 8px rgba(45, 87, 107, 0.2);
+            box-shadow:- 0 2px 6px rgba(45,87,107,0.15);
             display: grid;
             overflow: hidden;
+            transition: all 0.3s ease-in-out;
+
+           
             
 
             .status{
-                margin: .5rem 1rem;
-                padding: .4rem .8rem;
-               background: green;
+               margin: .5rem 1rem;
+               padding: .2rem .6rem;
+               background:  #059669;
                width: fit-content;
                text-align: center;
                border-radius: 1rem;
                color: #fff;
                h4{
-                font-size: 1rem;
-                font-weight: 500;
+                font-size: .8rem;
+                font-weight: 550;
                }
             }
 
@@ -34,9 +37,12 @@ main{
                 display: grid;
                 gap: .2rem;
                 place-items: center;
-                margin: .8rem 1rem 0 1rem;
+                margin: 0rem 1rem 0 1rem;
                 .avatar{
+                   
                     img{
+                        width: 6rem;
+
                         border-radius: 50%;
                         object-fit: cover;
                     }
@@ -122,6 +128,10 @@ main{
                 cursor: pointer;
             }
         }
+
+         .user:hover{
+                box-shadow: 0 8px 20px rgba(45,87,107,0.3);
+            }
     }
 }
 
@@ -156,7 +166,7 @@ main{
                 .status{
                     margin: .8rem 1rem;
                     h4{
-                        font-size: 1.2rem;
+                        font-size: .8rem;
                     }
                 }
 
@@ -165,19 +175,19 @@ main{
 
                     .name{
                         h3{
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                         }
                     }
 
                     .role{
                         h5{
-                            font-size: 1rem;
+                            font-size: .8rem;
                         }
                     }
 
                     .dec{
                         p{
-                            font-size: .95rem;
+                            font-size: .8rem;
                         }
                     }
                 }
@@ -194,7 +204,7 @@ main{
                 .status{
                     margin: 1rem 1.2rem;
                     h4{
-                        font-size: 1.3rem;
+                        font-size: .8rem;
                     }
                 }
 
@@ -203,18 +213,18 @@ main{
 
                     .name{
                         h3{
-                        font-size: 2.2rem;
+                        font-size: 1.5rem;
                         }
                     }
 
                     .role{
                         h5{
-                            font-size: 1.2rem;
+                            font-size: .8rem;
                         }
                     }
                     .skills{
                         .skill{
-                            padding: .5rem;
+                            padding: .3rem;
                             text-align: center;
                             border: none;
                              box-shadow: 0 2px 4px rgba(45, 87, 107, 0.1);;
@@ -224,7 +234,7 @@ main{
 
                     .dec{
                         p{
-                            font-size: 1.2rem;
+                            font-size: 1rem;
                         }
                     }
                 }

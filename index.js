@@ -135,7 +135,7 @@ function cardInfo(){
 
     
     clutter += ` <div class="user">
-                  <div class="status" style = 'background-color : ${elem.status === 'online' ? 'green' :'red'}'>
+                  <div class="status" style = 'background-color : ${elem.status === 'online' ? '#059669' :'#dc2626'}'>
                       <h4>${elem.status}</h>
                   </div>
                   <div class="info">
